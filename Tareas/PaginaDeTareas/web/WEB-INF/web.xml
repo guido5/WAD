@@ -10,6 +10,14 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Servlet</servlet-name>
-        <url-pattern>/Servlet</url-pattern>
+        <url-pattern>/html/Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletCramer</servlet-name>
+        <servlet-class>Application.ServletCramer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletCramer</servlet-name>
+        <url-pattern>/html/ServletCramer</url-pattern>
     </servlet-mapping>
 </web-app>
