@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    
     <servlet>
         <servlet-name>Servlet</servlet-name>
         <servlet-class>Application.Servlet</servlet-class>
@@ -19,5 +18,21 @@
     <servlet-mapping>
         <servlet-name>ServletCramer</servlet-name>
         <url-pattern>/html/ServletCramer</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HttpSessionSaveServlet</servlet-name>
+        <servlet-class>Application.HttpSessionSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HttpSessionSaveServlet</servlet-name>
+        <url-pattern>/html/HttpSessionSaveServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CookiesSaveServlet</servlet-name>
+        <servlet-class>Application.CookiesSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookiesSaveServlet</servlet-name>
+        <url-pattern>/html/CookiesSaveServlet</url-pattern>
     </servlet-mapping>
 </web-app>
