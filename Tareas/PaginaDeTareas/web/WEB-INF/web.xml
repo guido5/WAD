@@ -35,4 +35,12 @@
         <servlet-name>CookiesSaveServlet</servlet-name>
         <url-pattern>/html/CookiesSaveServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ResponseSaveServlet</servlet-name>
+        <servlet-class>Application.ResponseSaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseSaveServlet</servlet-name>
+        <url-pattern>/html/ResponseSaveServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
