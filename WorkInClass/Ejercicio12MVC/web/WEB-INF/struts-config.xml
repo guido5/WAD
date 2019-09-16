@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+    <form-beans>
+        <form-bean name="ActionForm1" type="ActionForm.ActionForm1" />
+    </form-beans>
+
+    <global-exceptions></global-exceptions>
+
+    <global-forwards>
+        <forward name="success" path="/success.jsp" />
+        <forward name="fail" path="/fail.jsp" />
+    </global-forwards>
+
+    <action-mappings>
+        <action input="/index.html" name="ActionForm1" path="/Accion" type="ActionForm.Action1" scope="session"  />
+    </action-mappings>
+
+
+</struts-config>
