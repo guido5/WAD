@@ -1,0 +1,24 @@
+--SCRIPT para el Login Servlet
+
+CREATE DATABASE BaseLoginServlet;
+
+use BaseLoginServlet;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+--tablas
+
+CREATE TABLE Users(idUser INT NOT NULL AUTO_INCREMENT, id VARCHAR(10) NOT NULL,
+			password VARCHAR(10) NOT NULL, PRIMARY KEY(idUser));
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+GRANT ALL ON BaseLoginServlet.* TO admin@localhost IDENTIFIED BY 'adminAuto';
+
+--Insertando datos de ejemplo
+
+INSERT INTO Users(id,password) VALUES('Abraham1','1');
+INSERT INTO Users(id,password) VALUES('Abraham2','2');
+INSERT INTO Users(id,password) VALUES('Abraham3','3');
+
+
