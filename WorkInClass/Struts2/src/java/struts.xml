@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package.
+        El action es la accion que se va a ejecutar. Lleva
+    -->
+    <package name="nombrepaquete" namespace="/Usuario" extends="struts-default">
+        <action name="Bienvenido" class="paquete.BienvenidoAction">
+            <result name="exitoso">/salida.jsp</result>
+        </action>
+    </package>
+</struts>
