@@ -1,0 +1,38 @@
+Crear una serie de archivos main.js o index.js
+Se cambia el archivo de json
+En el start genera el servidor de webpack y lo inicia en modo de desarrollador
+En el build genera un servidor en modo de produccion
+
+en las dependencias
+pone el core, preset-env(convierte de 6 a 5 edvascript), 
+preset-react(convierte de react a babel)
+, el loader de babel, react-dom (maquina virtual para el dom), html-loader (carga en
+html), webpack, webpack-cli, webpack-dev-server, etc.
+
+y finalmente el plugin para la inyecciond e webpack en html
+
+En el .babelrc son los preset para convertir de ec6 a ec5 y convierte de preset-env a preset-react
+
+
+Del webpack.config.js
+
+Dice que tomamos el thml-webpack-plugin que inyecta el codigo de webpack en html
+el modulo de reglas toma todos los archivos de js o jsx excluyendo la carpeta de node-modules
+tome el cargador de babel (babel-loader)
+
+y luego toma todos los html y use el cargador de html (html-loader)
+
+luego instanciamos un nuevo objeto htmlwebpackplugin y vamos a declarar nombre del html donde inyectamos
+el codigo que produce el webpack
+
+
+
+Al iniciar con start crea la guia, primero le das build o run
+
+
+
+Los atributos son los states en el nameform.jsx
+los enlazamos con el metodo bind y los manejadores los maneja react.
+
+En el render tenemos el formulario escrito en html dentro del return. Cuando se ejecutan las cosas va a tratar 
+de llamar a los handler 
